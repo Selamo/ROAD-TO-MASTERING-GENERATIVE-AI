@@ -1,7 +1,6 @@
 from config import load_google_chat_model
 
 chat_model=load_google_chat_model()
-print(f"My chat model is: {chat_model}")
 
 # terminal header
 print("PERSONAL TUTOR ASSISTANT")
