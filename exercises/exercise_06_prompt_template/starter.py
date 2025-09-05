@@ -8,6 +8,9 @@ prompt_template=PromptTemplate.from_template(
    
     "Given ingredients {ingredients} and the {cuisine} generate a detailed and informative recipe suitable for a beginner. "
 )
+# Where should we accept this input
+
+# ...existing code...
 
 def validate_template_variables(template, variables):
     missing = [var for var in template.input_variables if not variables.get(var)]
@@ -37,3 +40,4 @@ while True:
             print(part, end="", flush=True)
     except ValueError as e:
         print(f"Error: {e}")
+# ...existing code...
